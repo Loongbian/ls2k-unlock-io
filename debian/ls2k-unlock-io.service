@@ -1,0 +1,10 @@
+[Unit]
+Description=Loongson 2K EDU IO Unlocker
+
+[Service]
+Type=oneshot
+ExecStart=/usr/sbin/ls2k-unlock-io
+RemainAfterExit=true
+
+[Install]
+WantedBy=multi-user.target

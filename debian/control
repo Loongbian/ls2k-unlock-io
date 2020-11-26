@@ -1,0 +1,18 @@
+Source: ls2k-unlock-io
+Section: misc
+Priority: optional
+Maintainer: Boyue Zhang <boyue.zhang@pzhang.net>
+Build-Depends: debhelper (>= 11)
+Standards-Version: 4.1.3
+Homepage: https://github.com/Loongbian/ls2k-unlock-io
+Vcs-Browser: https://github.com/Loongbian/ls2k-unlock-io
+Vcs-Git: https://github.com/Loongbian/ls2k-unlock-io.git
+
+Package: ls2k-unlock-io
+Architecture: mips64el
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Unlock PWM and GPIO for Loongson 2K1000 EDU board
+ Some Loongson 2K EDU boards are shipped with bad PMON firmwares which 
+ misconfigure IO registers, leading to some unusable PWM and GPIO pins. 
+ To work around this problem, this program configures the registers 
+ properly on system startup.
